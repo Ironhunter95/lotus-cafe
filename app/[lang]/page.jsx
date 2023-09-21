@@ -1,6 +1,4 @@
 import { getDictionary } from '@lib/dictionary';
-import { Locale } from '@i18n.config';
-
 export default async function Home({ params: { lang } }) {
   const { homepage } = await getDictionary(lang);
   return (
